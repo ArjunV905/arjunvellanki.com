@@ -30,33 +30,6 @@
    npx next build
    ```
 
-## Project Architecture
-
-```
-app/
-├── globals.css              # Tailwind v4 theme (color palette, fonts, transitions)
-├── layout.tsx               # Root layout (Inter font, metadata, theme-color)
-├── page.tsx                 # Main single-page layout (sidebar + content sections)
-├── components/
-│   ├── SectionNav.tsx       # Sidebar nav with IntersectionObserver active tracking
-│   ├── SocialLinks.tsx      # GitHub, LinkedIn & Email icon links
-│   ├── ExperienceCard.tsx   # Single experience item (date, title, description, skills)
-│   └── ProjectCard.tsx      # Single project item (thumbnail, title, description, skills)
-├── data/
-│   └── portfolio.ts         # All portfolio content lives here (see below)
-└── utils/
-    └── parseMarkdownLinks.tsx  # Parses [text](url) syntax into styled React links
-
-public/
-├── images/
-│   ├── profile.jpg          # Profile photo (replace with your own image)
-│   └── projects/            # Project thumbnail images
-│       └── placeholder.svg
-└── resume.pdf               # Place your resume PDF here
-```
-
-**Layout overview:** On desktop (`lg`+), the page is a two-column flex layout. The left column is a sticky sidebar with your photo, name, title, section nav, and social links. The right column scrolls through About, Experience, and Projects sections followed by a footer. On mobile, the sidebar collapses to the top (no longer sticky, nav hidden), and each section gets its own sticky frosted-glass header label.
-
 ## How to Edit Content
 
 All portfolio content is centralized in **`app/data/portfolio.ts`**. Edit the exported objects and arrays there — the site renders dynamically from them.
@@ -149,6 +122,34 @@ An array of `Project` objects rendered in the Projects section.
   skills: ["React", "Node.js", "MongoDB"],
 }
 ```
+
+## Project Architecture
+
+```
+app/
+├── globals.css              # Tailwind v4 theme (color palette, fonts, transitions)
+├── layout.tsx               # Root layout (Inter font, metadata, theme-color)
+├── page.tsx                 # Main single-page layout (sidebar + content sections)
+├── components/
+│   ├── SectionNav.tsx       # Sidebar nav with IntersectionObserver active tracking
+│   ├── SocialLinks.tsx      # GitHub, LinkedIn & Email icon links
+│   ├── ExperienceCard.tsx   # Single experience item (date, title, description, skills)
+│   └── ProjectCard.tsx      # Single project item (thumbnail, title, description, skills)
+├── data/
+│   └── portfolio.ts         # All portfolio content lives here (see below)
+└── utils/
+    └── parseMarkdownLinks.tsx  # Parses [text](url) syntax into styled React links
+
+public/
+├── images/
+│   ├── profile.jpg          # Profile photo (replace with your own image)
+│   └── projects/            # Project thumbnail images
+│       └── placeholder.svg
+└── resume.pdf               # Place your resume PDF here
+```
+
+**Layout overview:** On desktop (`lg`+), the page is a two-column flex layout. The left column is a sticky sidebar with your photo, name, title, section nav, and social links. The right column scrolls through About, Experience, and Projects sections followed by a footer. On mobile, the sidebar collapses to the top (no longer sticky, nav hidden), and each section gets its own sticky frosted-glass header label.
+
 
 ## Color Palette
 
