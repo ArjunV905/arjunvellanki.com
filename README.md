@@ -5,6 +5,8 @@
   A portfolio website hosted at <a href="https://arjunvellanki.com" target="_blank">arjunvellanki.com</a>, built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, React, and Tailwind CSS, and deployed on <a href="https://vercel.com/" target="_blank">Vercel</a>.
 </p>
 
+![demo](https://raw.githubusercontent.com/ArjunV905/arjunvellanki.com/main/public/images/projects/arjunvellanki-com2.jpg)
+
 ## Installation & Set Up
 
 1. Install dependencies

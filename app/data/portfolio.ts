@@ -76,6 +76,14 @@ export const projects: Project[] = [
     image: "/images/projects/placeholder.svg",
     skills: ["Python"],
   },
+  {
+    title: "arjunvellanki.com",
+    description:
+      "My personal portfolio website built with Next.js, Tailwind CSS, and automatically deployed to Vercel with GitHub Actions.",
+    url: "https://github.com/ArjunV905/arjunvellanki.com",
+    image: "/images/projects/arjunvellanki-com.jpg",
+    skills: ["TypeScript", "Next.js", "Tailwind CSS", "Vercel"],
+  },
 ];
 
 // ──────────────────────────────────────────────
