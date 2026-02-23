@@ -8,7 +8,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
   const { startDate, endDate, title, company, location, url, description, skills } =
     experience;
 
-  const dateLabel = `${startDate} — ${endDate}`;
+  const dateLabel = endDate ? `${startDate} — ${endDate}` : startDate;
 
   const CompanyContent = (
     <span className="inline-block">

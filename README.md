@@ -42,7 +42,7 @@ app/
 
 public/
 ├── images/
-│   ├── profile.svg          # Profile photo (replace with your own image)
+│   ├── profile.jpg          # Profile photo (replace with your own image)
 │   └── projects/            # Project thumbnail images
 │       └── placeholder.svg
 └── resume.pdf               # Place your resume PDF here

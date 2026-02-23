@@ -1,6 +1,6 @@
 export interface Experience {
   startDate: string;
-  endDate: string;
+  endDate?: string;
   title: string;
   company: string;
   location?: string;
@@ -24,24 +24,23 @@ export interface Project {
 export const experiences: Experience[] = [
   {
     startDate: "2024",
-    endDate: "Present",
-    title: "Senior Software Engineer",
-    company: "Acme Corp",
-    location: "San Francisco, CA",
-    url: "https://example.com",
+    endDate: "2025",
+    title: "Software Developer",
+    company: "CACI",
+    url: "https://www.caci.com/",
     description:
-      "Led development of customer-facing web applications serving millions of users. Architected and implemented new features across the full stack, mentored junior engineers, and drove adoption of modern frontend practices.",
-    skills: ["TypeScript", "React", "Next.js", "Node.js", "AWS"],
+      "Contributed to the productization of a classification-controlled document management system, resolving production issues and implementing new features in an agile environment. Was responsible for developing a comprehensive unit testing framework, and supported the initial design and development of a full-stack Angular web application.",
+    skills: ["Angular", "TypeScript", ".NET", "C#", "PostgreSQL"],
   },
   {
-    startDate: "2022",
-    endDate: "2024",
-    title: "Software Engineer",
-    company: "Startup Inc",
-    url: "https://example.com",
+    startDate: "May",
+    endDate: "Aug 2023",
+    title: "Software Developer Intern",
+    company: "CACI",
+    url: "https://www.caci.com/",
     description:
-      "Built and shipped core product features from ideation to production. Collaborated closely with design and product teams to deliver polished, accessible user interfaces.",
-    skills: ["JavaScript", "React", "Python", "PostgreSQL"],
+      "Researched and documented Elasticsearch capabilities to evaluate its suitability as a database for HighView Lite. Developed a Python app showcasing key features such as full-text search, file parsing, and text highlighting.",
+    skills: ["Python", "Elasticsearch", "Logstash", "Kibana"],
   },
 ];
 
@@ -75,10 +74,10 @@ export const profile = {
   githubUrl: "https://github.com/arjunv905",
   linkedinUrl: "https://www.linkedin.com/in/arjun-vellanki/",
   resumePath: "/resume.pdf",
-  profileImage: "/images/profile.svg",
+  profileImage: "/images/profile.jpg",
 };
 
 export const aboutParagraphs: string[] = [
   "Detail-oriented Full-Stack Developer with 1 year of professional experience building scalable web applications. Experienced in integrating LLM-powered features into user-facing products. Proficient in JavaScript, Python, and modern DevOps practices, with a track record of owning features from development through deployment. Focused on building intelligent, high-impact technology solutions that combine strong software engineering with practical AI applications.",
-  "new line.",
+  " ",
 ];

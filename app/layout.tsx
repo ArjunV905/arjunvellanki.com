@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Arjun Vellanki",
   description:
-    "Portfolio website of Arjun Vellanki, a Full-Stack Developer.",
+    "Portfolio website of Arjun Vellanki, a Full-Stack Software Developer.",
   other: {
     "theme-color": "#0f172a",
   },
