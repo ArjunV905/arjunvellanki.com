@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "openDSAVisualizer",
     description:
       "A full-stack project for the Computer Science department in Virginia Tech that provides visualizations of students\’ study sessions for instructors to assess the effectiveness and performance of their courses. It integrates with openDSA to visualize existing student data.",
-    url: "https://github.com/ArjunV905/MyMovieList",
+    url: "https://github.com/egol2/openDSAVisualizer",
     image: "/images/projects/placeholder.svg",
     skills: ["React", "JavaScript", "Python", "Docker"],
   },
@@ -72,14 +72,14 @@ export const projects: Project[] = [
     title: "WILTTSpotify",
     description:
       "A Python project which uses Spotify’s API to automatically populate songs read from a .csv file to a playlist. It creates/adds to the current semester’s playlist, and does so by using either Spotify links or Artist Name and Song Title. The program was created for the professor of a music course at Virginia Tech.",
-    url: "https://github.com/ArjunV905/MyMovieList",
+    url: "https://github.com/ArjunV905/WILTTSpotify",
     image: "/images/projects/placeholder.svg",
     skills: ["Python"],
   },
   {
     title: "arjunvellanki.com",
     description:
-      "My personal portfolio website built with Next.js, Tailwind CSS, and automatically deployed to Vercel with GitHub Actions.",
+      "A personal portfolio website built with Next.js, Tailwind CSS, and deployed using Vercel.",
     url: "https://github.com/ArjunV905/arjunvellanki.com",
     image: "/images/projects/arjunvellanki-com.jpg",
     skills: ["TypeScript", "Next.js", "Tailwind CSS", "Vercel"],
@@ -103,5 +103,5 @@ export const profile = {
 
 export const aboutParagraphs: string[] = [
   "Detail-oriented Full-Stack Developer with 1 year of professional experience building scalable web applications. Experienced in integrating LLM-powered features into user-facing products. Proficient in JavaScript, Python, and modern DevOps practices, with a track record of owning features from development through deployment. Focused on building intelligent, high-impact technology solutions that combine strong software engineering with practical AI applications.",
-  " ",
+  "I have previously worked as a Software Developer at CACI where I was responsible for addressing any issues across the full stack system, and for implementing new features such as an Administration website that interfaced with the core stack. Alongside my professional work, I have also worked on various projects to help solve real problems that either myself or people close to me have encountered. These experiences have shaped my ability to quickly identify the underlying issue of a problem, allowing me to design and implement an effective solution that solves the problem.",
 ];
