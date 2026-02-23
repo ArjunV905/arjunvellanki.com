@@ -5,7 +5,7 @@
   arjunvellanki.com
 </h1>
 <p align="center">
-  A portfolio website hosted at <a href="https://arjunvellanki.com" target="_blank">arjunvellanki.com</a>, built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, React, and Tailwind CSS, and deployed on <a href="https://vercel.com/" target="_blank">Vercel</a>.
+  A portfolio website hosted at <a href="https://arjunvellanki.com" target="_blank">arjunvellanki.com</a>, built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, <a href="https://react.dev/" target="_blank">React</a>, and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, and deployed using <a href="https://vercel.com/" target="_blank">Vercel</a>.
 </p>
 
 ![demo](https://raw.githubusercontent.com/ArjunV905/arjunvellanki.com/main/public/images/projects/arjunvellanki-com2.jpg)
