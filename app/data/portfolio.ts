@@ -38,7 +38,7 @@ export const aboutParagraphs: string[] = [
 ];
 
 export const footerText =
-  "Coded in [Visual Studio Code](https://code.visualstudio.com/) by yours truly. Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), deployed with [Vercel](https://vercel.com/).";
+  "Coded in [Visual Studio Code](https://code.visualstudio.com/) by yours truly. Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), and deployed with [Vercel](https://vercel.com/). View the source code on [GitHub](https://github.com/ArjunV905/arjunvellanki.com).";
 
 
 

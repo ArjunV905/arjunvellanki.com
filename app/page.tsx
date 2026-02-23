@@ -143,7 +143,7 @@ export default function Home() {
           </section>
 
           {/* Footer */}
-          <footer className="max-w-md pb-16 text-sm text-text-secondary sm:pb-0">
+          <footer className="pb-16 text-sm text-text-secondary sm:pb-0">
             <p>{parseMarkdownLinks(footerText)}</p>
           </footer>
         </main>
