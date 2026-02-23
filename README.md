@@ -1,3 +1,6 @@
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/ArjunV905/arjunvellanki.com/main/public/images/logo.png" width="100" height="100" />
+</div>
 <h1 align="center">
   arjunvellanki.com
 </h1>
