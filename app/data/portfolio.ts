@@ -23,8 +23,8 @@ export interface Project {
 
 export const profile = {
   name: "Arjun Vellanki",
-  title: "Software Engineer",
-  tagline: "Full-Stack Developer",
+  title: "Software Developer",
+  tagline: "Specializing in Full-Stack Development",
   email: "arjunv.app@gmail.com",
   githubUrl: "https://github.com/arjunv905",
   linkedinUrl: "https://www.linkedin.com/in/arjun-vellanki/",
