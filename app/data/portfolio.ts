@@ -18,7 +18,32 @@ export interface Project {
 }
 
 // ──────────────────────────────────────────────
-// Edit these arrays to populate your portfolio.
+// Profile / site-wide info
+// ──────────────────────────────────────────────
+
+export const profile = {
+  name: "Arjun Vellanki",
+  title: "Software Engineer",
+  tagline: "Full-Stack Developer",
+  email: "arjunv.app@gmail.com",
+  githubUrl: "https://github.com/arjunv905",
+  linkedinUrl: "https://www.linkedin.com/in/arjun-vellanki/",
+  resumePath: "/resume.pdf",
+  profileImage: "/images/profile.jpg",
+};
+
+export const aboutParagraphs: string[] = [
+  "Detail-oriented Full-Stack Developer with 1 year of professional experience building scalable web applications. Experienced in integrating LLM-powered features into user-facing products. Proficient in JavaScript, Python, and modern DevOps practices, with a track record of owning features from development through deployment. Focused on building intelligent, high-impact technology solutions that combine strong software engineering with practical AI applications.",
+  "I have previously worked as a Software Developer at [CACI](https://www.caci.com/) where I was responsible for addressing any issues across the full stack system, and for implementing new features such as an Administration website that interfaced with the core stack. Alongside my professional work, I have also worked on various projects to help solve real problems that either myself or people close to me have encountered. These experiences have shaped my ability to quickly identify the underlying issue of a problem, allowing me to design and implement an effective solution that solves the problem.",
+];
+
+export const footerText =
+  "Coded in [Visual Studio Code](https://code.visualstudio.com/) by yours truly. Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), deployed with [Vercel](https://vercel.com/).";
+
+
+
+// ──────────────────────────────────────────────
+// Experience and Projects
 // ──────────────────────────────────────────────
 
 export const experiences: Experience[] = [
@@ -84,24 +109,4 @@ export const projects: Project[] = [
     image: "/images/projects/arjunvellanki-com.jpg",
     skills: ["TypeScript", "Next.js", "Tailwind CSS", "Vercel"],
   },
-];
-
-// ──────────────────────────────────────────────
-// Profile / site-wide info
-// ──────────────────────────────────────────────
-
-export const profile = {
-  name: "Arjun Vellanki",
-  title: "Software Engineer",
-  tagline: "Full-Stack Developer",
-  email: "arjunv.app@gmail.com",
-  githubUrl: "https://github.com/arjunv905",
-  linkedinUrl: "https://www.linkedin.com/in/arjun-vellanki/",
-  resumePath: "/resume.pdf",
-  profileImage: "/images/profile.jpg",
-};
-
-export const aboutParagraphs: string[] = [
-  "Detail-oriented Full-Stack Developer with 1 year of professional experience building scalable web applications. Experienced in integrating LLM-powered features into user-facing products. Proficient in JavaScript, Python, and modern DevOps practices, with a track record of owning features from development through deployment. Focused on building intelligent, high-impact technology solutions that combine strong software engineering with practical AI applications.",
-  "I have previously worked as a Software Developer at CACI where I was responsible for addressing any issues across the full stack system, and for implementing new features such as an Administration website that interfaced with the core stack. Alongside my professional work, I have also worked on various projects to help solve real problems that either myself or people close to me have encountered. These experiences have shaped my ability to quickly identify the underlying issue of a problem, allowing me to design and implement an effective solution that solves the problem.",
 ];

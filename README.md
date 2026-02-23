@@ -36,11 +36,13 @@ app/
 ├── page.tsx                 # Main single-page layout (sidebar + content sections)
 ├── components/
 │   ├── SectionNav.tsx       # Sidebar nav with IntersectionObserver active tracking
-│   ├── SocialLinks.tsx      # GitHub & LinkedIn icon links
+│   ├── SocialLinks.tsx      # GitHub, LinkedIn & Email icon links
 │   ├── ExperienceCard.tsx   # Single experience item (date, title, description, skills)
 │   └── ProjectCard.tsx      # Single project item (thumbnail, title, description, skills)
-└── data/
-    └── portfolio.ts         # All portfolio content lives here (see below)
+├── data/
+│   └── portfolio.ts         # All portfolio content lives here (see below)
+└── utils/
+    └── parseMarkdownLinks.tsx  # Parses [text](url) syntax into styled React links
 
 public/
 ├── images/
@@ -66,19 +68,29 @@ Site-wide identity and links.
 | `title`        | `string` | Job title / role                                 |
 | `tagline`      | `string` | Short one-liner under your title                 |
 | `githubUrl`    | `string` | GitHub profile URL                               |
+| `email`        | `string` | Email address (used for mailto: link)            |
 | `linkedinUrl`  | `string` | LinkedIn profile URL                             |
 | `resumePath`   | `string` | Path to resume PDF (e.g. `"/resume.pdf"`)        |
 | `profileImage` | `string` | Path to profile photo (e.g. `"/images/profile.jpg"`) |
 
 ### `aboutParagraphs`
 
-An array of strings. Each string becomes a `<p>` element in the About section. Add or remove entries as needed.
+An array of strings. Each string becomes a `<p>` element in the About section. Add or remove entries as needed. Supports markdown-style links via `[text](url)` syntax.
 
 ```ts
 export const aboutParagraphs: string[] = [
-  "First paragraph of your bio.",
+  "First paragraph with a link to [My Company](https://example.com).",
   "Second paragraph with more detail.",
 ];
+```
+
+### `footerText`
+
+A single string rendered at the bottom of the page. Supports `[text](url)` markdown links.
+
+```ts
+export const footerText =
+  "Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), deployed with [Vercel](https://vercel.com/).";
 ```
 
 ### `experiences`
@@ -88,7 +100,7 @@ An array of `Experience` objects rendered in the Experience section. Items appea
 | Field       | Type       | Required | Description                                          |
 | ----------- | ---------- | -------- | ---------------------------------------------------- |
 | `startDate` | `string`   | Yes      | Start date text (e.g. `"2024"`, `"July 2022"`)      |
-| `endDate`   | `string`   | Yes      | End date text (e.g. `"Present"`, `"2024"`)           |
+| `endDate`   | `string`   | No       | End date text (e.g. `"Present"`, `"2024"`). If omitted, only startDate is shown. |
 | `title`     | `string`   | Yes      | Job title                                            |
 | `company`   | `string`   | Yes      | Company name                                         |
 | `location`  | `string`   | No       | Location (shown below the title if provided)         |

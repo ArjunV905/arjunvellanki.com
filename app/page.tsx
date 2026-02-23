@@ -3,9 +3,11 @@ import SectionNav from "@/app/components/SectionNav";
 import SocialLinks from "@/app/components/SocialLinks";
 import ExperienceCard from "@/app/components/ExperienceCard";
 import ProjectCard from "@/app/components/ProjectCard";
+import { parseMarkdownLinks } from "@/app/utils/parseMarkdownLinks";
 import {
   profile,
   aboutParagraphs,
+  footerText,
   experiences,
   projects,
 } from "@/app/data/portfolio";
@@ -64,7 +66,7 @@ export default function Home() {
             <div>
               {aboutParagraphs.map((text, i) => (
                 <p key={i} className="mb-4">
-                  {text}
+                  {parseMarkdownLinks(text)}
                 </p>
               ))}
             </div>
@@ -142,45 +144,7 @@ export default function Home() {
 
           {/* Footer */}
           <footer className="max-w-md pb-16 text-sm text-text-secondary sm:pb-0">
-            <p>
-              Coded in{" "}
-              <a
-                href="https://code.visualstudio.com/"
-                className="font-medium text-text-primary hover:text-highlight focus-visible:text-highlight transition-colors"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Visual Studio Code
-              </a>{" "}
-              by yours truly. Built with{" "}
-              <a
-                href="https://nextjs.org/"
-                className="font-medium text-text-primary hover:text-highlight focus-visible:text-highlight transition-colors"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Next.js
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://tailwindcss.com/"
-                className="font-medium text-text-primary hover:text-highlight focus-visible:text-highlight transition-colors"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Tailwind CSS
-              </a>
-              , deployed with{" "}
-              <a
-                href="https://vercel.com/"
-                className="font-medium text-text-primary hover:text-highlight focus-visible:text-highlight transition-colors"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Vercel
-              </a>
-              .
-            </p>
+            <p>{parseMarkdownLinks(footerText)}</p>
           </footer>
         </main>
       </div>
