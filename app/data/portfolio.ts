@@ -46,19 +46,35 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    title: "Project Alpha",
+    title: "Notara",
     description:
-      "A full-stack web application that helps users track and visualize their personal goals. Features real-time updates, interactive charts, and a clean, responsive interface.",
-    url: "https://example.com",
+      "An AI-powered full-stack desktop application to centralize student course management, scheduling, and document access. Integrated LLM-powered features for syllabus parsing and natural language querying of course materials. Implemented semantic search using embeddings stored in a vector database to enable context-aware document retrieval (RAG pipeline). Deployed locally hosted Gemma 3 embedding and inference models via Ollama for all AI functionality. Leveraged AI-assisted development tools to accelerate feature implementation and iteration.",
     image: "/images/projects/placeholder.svg",
-    skills: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    skills: ["React", "TypeScript", "Rust", "Tauri", "Ollama", "Gemma 3", "Cursor"],
   },
   {
-    title: "Project Beta",
+    title: "MyMovieList",
     description:
-      "An open-source CLI tool that automates common development workflows. Supports custom plugins and integrates with popular CI/CD pipelines.",
+      "A full-stack project that allows users to view movie information and track their watched movies, while also allowing admin users to moderate content posted to the site.",
+    url: "https://github.com/ArjunV905/MyMovieList",
     image: "/images/projects/placeholder.svg",
-    skills: ["TypeScript", "Node.js", "CLI"],
+    skills: ["React", "JavaScript", "Python", "Docker"],
+  },
+  {
+    title: "openDSAVisualizer",
+    description:
+      "A full-stack project for the Computer Science department in Virginia Tech that provides visualizations of students\’ study sessions for instructors to assess the effectiveness and performance of their courses. It integrates with openDSA to visualize existing student data.",
+    url: "https://github.com/ArjunV905/MyMovieList",
+    image: "/images/projects/placeholder.svg",
+    skills: ["React", "JavaScript", "Python", "Docker"],
+  },
+  {
+    title: "WILTTSpotify",
+    description:
+      "A Python project which uses Spotify’s API to automatically populate songs read from a .csv file to a playlist. It creates/adds to the current semester’s playlist, and does so by using either Spotify links or Artist Name and Song Title. The program was created for the professor of a music course at Virginia Tech.",
+    url: "https://github.com/ArjunV905/MyMovieList",
+    image: "/images/projects/placeholder.svg",
+    skills: ["Python"],
   },
 ];
 
