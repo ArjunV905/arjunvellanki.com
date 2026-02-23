@@ -74,7 +74,7 @@ export const projects: Project[] = [
     title: "Notara",
     description:
       "An AI-powered full-stack desktop application to centralize student course management, scheduling, and document access. Integrated LLM-powered features for syllabus parsing and natural language querying of course materials. Implemented semantic search using embeddings stored in a vector database to enable context-aware document retrieval (RAG pipeline). Deployed locally hosted Gemma 3 embedding and inference models via Ollama for all AI functionality. Leveraged AI-assisted development tools to accelerate feature implementation and iteration.",
-    image: "/images/projects/placeholder.svg",
+    image: "/images/projects/notara.png",
     skills: ["React", "TypeScript", "Rust", "Tauri", "Ollama", "Gemma 3", "Cursor"],
   },
   {
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     description:
       "A full-stack project that allows users to view movie information and track their watched movies, while also allowing admin users to moderate content posted to the site.",
     url: "https://github.com/ArjunV905/MyMovieList",
-    image: "/images/projects/placeholder.svg",
+    image: "/images/projects/mymovielist.png",
     skills: ["React", "JavaScript", "Python", "Docker"],
   },
   {
@@ -90,16 +90,8 @@ export const projects: Project[] = [
     description:
       "A full-stack project for the Computer Science department in Virginia Tech that provides visualizations of students\’ study sessions for instructors to assess the effectiveness and performance of their courses. It integrates with openDSA to visualize existing student data.",
     url: "https://github.com/egol2/openDSAVisualizer",
-    image: "/images/projects/placeholder.svg",
+    image: "/images/projects/opendsavisualizer.jpg",
     skills: ["React", "JavaScript", "Python", "Docker"],
-  },
-  {
-    title: "WILTTSpotify",
-    description:
-      "A Python project which uses Spotify’s API to automatically populate songs read from a .csv file to a playlist. It creates/adds to the current semester’s playlist, and does so by using either Spotify links or Artist Name and Song Title. The program was created for the professor of a music course at Virginia Tech.",
-    url: "https://github.com/ArjunV905/WILTTSpotify",
-    image: "/images/projects/placeholder.svg",
-    skills: ["Python"],
   },
   {
     title: "arjunvellanki.com",
@@ -108,5 +100,12 @@ export const projects: Project[] = [
     url: "https://github.com/ArjunV905/arjunvellanki.com",
     image: "/images/projects/arjunvellanki-com.jpg",
     skills: ["TypeScript", "Next.js", "Tailwind CSS", "Vercel"],
+  },
+  {
+    title: "WILTTSpotify",
+    description:
+      "A Python project which uses Spotify’s API to automatically populate songs read from a .csv file to a playlist. It creates/adds to the current semester’s playlist, and does so by using either Spotify links or Artist Name and Song Title. The program was created for the professor of a music course at Virginia Tech.",
+    url: "https://github.com/ArjunV905/WILTTSpotify",
+    skills: ["Python"],
   },
 ];
