@@ -1,7 +1,7 @@
-import Image from "next/image";
 import SectionNav from "@/app/components/SectionNav";
 import SocialLinks from "@/app/components/SocialLinks";
 import StickyHeader from "@/app/components/StickyHeader";
+import ProfileImage from "@/app/components/ProfileImage";
 import ExperienceCard from "@/app/components/ExperienceCard";
 import ProjectCard from "@/app/components/ProjectCard";
 import { parseMarkdownLinks } from "@/app/utils/parseMarkdownLinks";
@@ -20,16 +20,7 @@ export default function Home() {
         {/* ── Sidebar / Header ── */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <div className="mb-4 h-24 w-24 overflow-hidden rounded-full border-2 border-text-primary/20">
-              <Image
-                src={profile.profileImage}
-                alt={profile.name}
-                width={96}
-                height={96}
-                className="h-full w-full object-cover"
-                priority
-              />
-            </div>
+            <ProfileImage src={profile.profileImage} alt={profile.name} />
 
             <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl">
               <a href="/">{profile.name}</a>

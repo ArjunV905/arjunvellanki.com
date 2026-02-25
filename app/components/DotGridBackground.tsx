@@ -8,7 +8,7 @@ const DOT_BASE_RADIUS = 1.5;
 const DOT_ACTIVE_RADIUS = 2.5;
 const ACTIVATION_RADIUS = 180;
 const BASE_OPACITY = 0.08;
-const ACTIVE_OPACITY = 0.55;
+const ACTIVE_OPACITY = 0.70;
 const MAX_DISPLACEMENT = 4;
 const DOT_COLOR = "#4ec1b3";
 
