@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import DotGridBackground from "@/app/components/DotGridBackground";
 import "./globals.css";
 
 const inter = Inter({
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <DotGridBackground />
+        {children}
+      </body>
     </html>
   );
 }
