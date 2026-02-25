@@ -11,6 +11,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #1a2b35 transparent;
 }
 
 body {
@@ -25,6 +27,7 @@ body {
   background-color: rgba(78, 193, 179, 0.3);
   color: var(--color-highlight);
 }
+
 
 .nav-indicator {
   transition: width 0.25s ease, background-color 0.25s ease;
