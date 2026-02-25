@@ -131,6 +131,9 @@ app/
 ├── layout.tsx               # Root layout (Inter font, metadata, theme-color)
 ├── page.tsx                 # Main single-page layout (sidebar + content sections)
 ├── components/
+│   ├── DotGridBackground.tsx # Canvas dot grid background with cursor + scroll reactivity
+│   ├── ProfileImage.tsx     # Profile picture with cursor-illuminated offset outline
+│   ├── StickyHeader.tsx     # Mobile section header that blurs only when stuck
 │   ├── SectionNav.tsx       # Sidebar nav with IntersectionObserver active tracking
 │   ├── SocialLinks.tsx      # GitHub, LinkedIn & Email icon links
 │   ├── ExperienceCard.tsx   # Single experience item (date, title, description, skills)
@@ -150,6 +153,36 @@ public/
 
 **Layout overview:** On desktop (`lg`+), the page is a two-column flex layout. The left column is a sticky sidebar with your photo, name, title, section nav, and social links. The right column scrolls through About, Experience, and Projects sections followed by a footer. On mobile, the sidebar collapses to the top (no longer sticky, nav hidden), and each section gets its own sticky frosted-glass header label.
 
+
+## Customizable Variables
+
+### Dot Grid Background (`app/components/DotGridBackground.tsx`)
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `GRID_SPACING` | `35` | Distance between dots in pixels |
+| `DOT_BASE_RADIUS` | `1.5` | Default dot radius |
+| `DOT_ACTIVE_RADIUS` | `2.5` | Dot radius when cursor is nearby |
+| `ACTIVATION_RADIUS` | `180` | How close the cursor must be to activate a dot (px) |
+| `BASE_OPACITY` | `0.08` | Dot opacity at rest |
+| `ACTIVE_OPACITY` | `0.70` | Dot opacity when activated by cursor |
+| `MAX_DISPLACEMENT` | `4` | Max distance a dot shifts away from the cursor (px) |
+| `DOT_COLOR` | `#4ec1b3` | Dot color (hex) |
+| `SCROLL_PARALLAX` | `0.1` | How much dots shift on scroll relative to content (0–1) |
+| `LERP_SPEED` | `0.08` | Easing speed for cursor interaction (lower = floatier) |
+| `SPRING_STIFFNESS` | `0.05` | Scroll bounce pull strength (higher = tighter follow) |
+| `SPRING_DAMPING` | `0.65` | Scroll bounce friction (lower = settles faster, higher = bouncier) |
+
+### Profile Image (`app/components/ProfileImage.tsx`)
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `IMAGE_SIZE` | `96` | Profile picture width and height in pixels |
+| `GLOW_RADIUS` | `150` | Radius of the cursor illumination on the outline (px) |
+| `OUTLINE_OFFSET` | `10` | How far the outline is offset behind the image (px) |
+| `BASE_COLOR` | `rgba(226, 232, 240, 0.25)` | Dim outline color |
+| `GLOW_COLOR` | `#4ec1b3` | Bright outline color revealed near cursor |
+| `BORDER_WIDTH` | `2` | Outline thickness in pixels |
 
 ## Color Palette
 
