@@ -94,12 +94,20 @@ export const projects: Project[] = [
     skills: ["React", "JavaScript", "Python", "Docker"],
   },
   {
+    title: "swirlxmusic.com",
+    description:
+      "An artist website built for Swirlx using Astro, React, and deployed using Vercel.",
+    url: "https://github.com/ArjunV905/swirlxmusic.com",
+    image: "/images/projects/swirlxmusic-com.jpg",
+    skills: ["React", "TypeScript", "Astro", "Vercel"],
+  },
+  {
     title: "arjunvellanki.com",
     description:
       "A personal portfolio website built with Next.js, Tailwind CSS, and deployed using Vercel.",
     url: "https://github.com/ArjunV905/arjunvellanki.com",
     image: "/images/projects/arjunvellanki-com.jpg",
-    skills: ["TypeScript", "Next.js", "Tailwind CSS", "Vercel"],
+    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vercel"],
   },
   {
     title: "WILTTSpotify",
